@@ -6,15 +6,17 @@ body {
   .under {
     text-decoration: underline red;
   }
-
+/* header changes */
   h1 {
     color: rgb(169, 177, 104);
     margin-left: 0.5in;
     text-align: left;
+    position: relative;
   }
   h2 {
     color: #FF8C33;
     margin-left: 10px;
+    position: static;
   }
   h3 {
     color: hsl(200, 0%, 100%);
@@ -23,11 +25,16 @@ body {
   h4 {
     color:green;
     margin-left: 10vh;
+    display: flexbox;
   }
+  /* list changes */
   p, 
 ul {
   border: 2px solid rebeccapurple;
+  height: 20px;
+  width: 500px;
   padding: .5em;
+  list-style: inline;
 }
 p {
     border-style: solid;
@@ -38,11 +45,15 @@ p {
     margin-bottom: 10px;
     margin-right: 15px;
     margin-left: 10px;
+    font-family: 'Birthstone', cursive;
+    font-size: 22px;
   }
 
 .block,
 li {
   border: 2px solid blue 0px;
+  max-width: 400px;
+  max-height: 20px;
   padding-top: 1ex;
   padding-bottom: 1ex;
   padding-left: 1ex;
@@ -62,4 +73,79 @@ ul {
     margin: 10px 30px 40px 4em;
     padding: 25px 50px 75px 100px;
   } 
-   
+
+  .container {
+    display: inline flex;
+  }
+  .flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 1px;
+    margin: 1px;
+    list-style: none;
+  }
+  .flex-item {
+    background: tomato;
+    padding: 5px;
+    width: 200px;
+    height: 150px;
+    margin-top: 10px;
+    line-height: 150px;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+  }
+
+  button:hover {
+    color: red;
+  }
+  button:active {
+    color: blue;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    body {
+      background-color: lavender;
+    }
+  }
+  #identified {
+    background-color:pink;
+  }
+  *.warning {
+    color: red;
+  }
+  a[href="https://www.when2meet.com/?13113174-lwDeA"] {
+    font-style: italic;
+  }
+  span,
+div {
+  border: red 2px solid;
+}
+ul li {
+    list-style-type: circle;
+  }
+  .item-b {
+    grid-column-start: 1;
+    grid-column-end: span col4-start;
+    grid-row-start: 2;
+    grid-row-end: span 2;
+  }
+  .container {
+    grid-template-rows: [row1-start] 25% [row1-end row2-start] 25% [row2-end];
+  }
+  .container {
+    grid-template-columns: repeat(3, 20px [col-start]);
+  }
+  .container {
+    grid-template-columns: 20px [col-start] 20px [col-start] 20px [col-start];
+  }
+  p ~ span {
+    color: blueviolet;
+  }
+
+  li:first-of-type + li {
+    color: blueviolet;
+  }
+  body > p { color: blue; }

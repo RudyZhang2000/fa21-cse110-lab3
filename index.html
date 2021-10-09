@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="mystyle.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +11,7 @@
     <title>Meeting Minutes RZ</title>
 </head>
 <body>
-<p>A few messages from our president:</p>
+<p id="identified">A few messages from our president:</p>
 <video width="320" height="240" controls>
     <source src="/screenshots/WIN_20211003_19_36_35_Pro.mp4" type="video/mp4">
   Your browser does not support the video tag.
@@ -18,7 +21,7 @@
     <source src="/screenshots/Lab2Recording.m4a" type="audio/m4a">
   Your browser does not support the audio element.
 </audio>
-    <h1>Club Meeting Minutes</h1>
+    <h1 class="container">Club Meeting Minutes</h1>
     <img src="screenshots/Civil_War_meeting_EW.jpg" alt="Our Meeting" width="500" />
     <header>
         <p>Date: October 1st, 2021</p>
@@ -32,7 +35,7 @@
         <section>
         <h2>Attendee List: </h2>
         <h4><b><span>Exec Board</span> please bold your name</b></h4>
-        <div>Exec Board please stay afterwards for exec meeting</div>
+        <div class="box">Exec Board please stay afterwards for exec meeting</div>
         <ul>
             <li><b>Rudy</b></li>
             <li>Ryan</li>
@@ -47,25 +50,25 @@
     </header>
     <hr>
     <main>
-        <h2>Meeting Agenda:</h2>
+        <h2 class="flex-container">Meeting Agenda:</h2>
         <ol>
             <li>Introductions</li>
             <li>Icebreaker Games</li>
-            <li>Brainstorm for Fall GBM (General Body Meeting)</li>
+            <li style = "color: green;">Brainstorm for Fall GBM (General Body Meeting)</li>
             <li>Schedule Next Meeting Based on Availablility</li>
         </ol>
     </main>
     <footer>
         <details>
             <summary>
-                <i>Fill out the When2Meet</i>
+                <i class="warning">Fill out the When2Meet</i>
             </summary>
             <strong><em>YOU BETTER FILL OUT THE WHEN2MEET <br>WE NEED IT ASAP !!</em></strong>
         </details>
         <hr>
         <a href="https://www.when2meet.com/?13113174-lwDeA">Link to When2Meet</a>
     </footer>
-<h3>Leave your name to apply to join our team: </h3>
+<h3 class='container'>Leave your name to apply to join our team: </h3>
 <form>
 <label>Name:
 <input name="name" autocomplete="name">
