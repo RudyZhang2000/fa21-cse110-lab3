@@ -1,0 +1,65 @@
+/* use comments to make my css easier to read! */
+body {
+    background-color: lightblue;
+  }
+
+  .under {
+    text-decoration: underline red;
+  }
+
+  h1 {
+    color: rgb(169, 177, 104);
+    margin-left: 0.5in;
+    text-align: left;
+  }
+  h2 {
+    color: #FF8C33;
+    margin-left: 10px;
+  }
+  h3 {
+    color: hsl(200, 0%, 100%);
+    margin-left: 1cm;
+  }
+  h4 {
+    color:green;
+    margin-left: 10vh;
+  }
+  p, 
+ul {
+  border: 2px solid rebeccapurple;
+  padding: .5em;
+}
+p {
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    margin-left: 10px;
+  }
+
+.block,
+li {
+  border: 2px solid blue 0px;
+  padding-top: 1ex;
+  padding-bottom: 1ex;
+  padding-left: 1ex;
+  padding-right: 1ex;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+.block {
+  display: block;
+}  
+
+.box {
+    margin: 10px 30px 40px 4em;
+    padding: 25px 50px 75px 100px;
+  } 
+   
